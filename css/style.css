@@ -89,7 +89,6 @@ header {
 }
 
 /* Style login container */
-.form
 /* CSS Untuk Kontainer Formulir Nomor Resi */
 .resi-form-container {
     display: flex;
@@ -165,11 +164,24 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+.photo-container {
+    display: flex; /* Menggunakan flexbox */
+    flex-wrap: wrap; /* Baris baru jika elemen tidak muat dalam lebar */
+    justify-content: center; /* Elemen sekitar secara horizontal */
+    align-items: stretch;
+    padding: 10px;
+    background-color: #fff;
+    /* min-height: 100vh; */
+    gap: 20px; /* Jarak antara elemen-foto */
+    /* CSS untuk Container Foto */
+
+}
+
 
 /* CSS untuk Setiap Foto */
 .photo {
     width: 250px; /* Lebar setiap foto */
-    background-color: #f7f7f7; /* Warna latar belakang foto container */
+    background-color: #13263C; /* Warna latar belakang foto container */
     padding: 50px; /* Ruang di sekitar setiap foto */
     border-radius: 10px; /* Sudut-sudut melengkung pada setiap foto */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan pada setiap foto */
@@ -179,7 +191,7 @@ button[type="submit"]:hover {
 }
 
 .photo img {
-    max-width: 50%; /* Membuat gambar dalam foto tidak melebihi lebar foto */
+    max-width: 100%; /* Membuat gambar dalam foto tidak melebihi lebar foto */
     height: auto; /* Mengatur tinggi gambar secara otomatis */
     border-radius: 5px; /* Sudut-sudut melengkung pada gambar */
     align-items: center;
@@ -191,41 +203,6 @@ button[type="submit"]:hover {
     font-size: 16px;
 }
 /* CSS untuk Container Foto */
-.photo-container {
-    display: grid;
-/* CSS untuk Container Foto */
-.photo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Mengisi seluruh tinggi viewport (layar) */
-    background-color: #f7f7f7; /* Warna latar belakang */
-}
-
-/* CSS untuk Foto Besar */
-.large-photo {
-    background-color: #fff; /* Warna latar belakang foto */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.large-photo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.large-photo p {
-    margin-top: 120px;
-    font-size: 16px;
-}
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar yang sama */
-    grid-gap: 20px; /* Jarak antara foto-foto */
-    padding: 10px 20px;
-    align-items: center;
-}
 
 
 
