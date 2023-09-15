@@ -7,63 +7,67 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div>
-        <nav>
-            <header>
-                <h1>RevExpress Update 2</h1>
-            </header>
-            <ul>
-                <li><a href="#" id="home-link" class="active">Home</a></li>
-                <li><a href="#" id="services-link">Services</a></li>
-                <li><a href="#" id="about-link">About Us</a></li>
-                <li><a href="#" id="contact-link">Contact</a></li>
-                <li><a href="#" id="login-link">Login</a></li>
-                <li><a href="#" id="register-link">Register</a></li>
-            </ul>
-        </nav>
-        <div class="jumbotron">
-            <h1>Welcome to revExpress</h1>
-            <p>Your Trusted Shipping Partner</p>
-            <a href="#services">Learn More</a>
-        </div>
+    <header>
+        <a href="#" class="logo">RevExpress<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#" id="home-link" class="active">Home</a></li>
+            <li><a href="#centered-services" id="services-link">Services</a></li>
+            <li><a href="#fitur" id="fitur-link">Fitur</a></li>
+            <li><a href="#" id="about-link">About Us</a></li>
+            <li><a href="#" id="login-link">Login</a></li>
+            <li><a href="#" id="register-link">Register</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <section class="banner" id="banner">
+            <div class="content">
+                <h2>Welcome to revExpress</h2>
+                <p>Your Trusted Shipping Partner</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="hasTag">
+                <h3 style="color: #fff;">Kemana Saja,</h3>
+                <h3 style="color: #FAB95B;">Kapan Saja</h3>
+            </div>
+        </section>
+        <section id="centered-services">
+            <div class="centered-services">
+                <a href="#" class="btn" id="trace-and-track-link">Trace and Track</a>
+                <a href="#" class="btn" id="shipping-rates-link">Shipping Rates</a>
+                <a href="#" class="btn" id="drop-point-link">Drop Point</a>
+            </div>
+            <div class="resi-form-container">
+                <div class="resi-form">
+                    <h3>Enter Your Tracking Number</h3>
+                    <form id="tracking-form">
+                        <input type="text" id="tracking-number" placeholder="Enter Tracking Number" required>
+                        <button class="btn" type="submit">Track</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="fitur">
+            <div class="centered-services"> 
+                <h1>FITUR</h1>
+            </div>
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./assets/item2.png" alt="Photo 1">
+                </div>
+                <div class="photo">
+                    <img src="./assets/item3.png" alt="Photo 2">
+                </div>
+                <div class="photo">
+                    <img src="./assets/item4.png" alt="Photo 3">
+                </div>
+                <div class="photo">
+                    <img src="./assets/item5.png" alt="Photo 4">
+                </div>
+            </div>
+        
+        </section>
     </div>
-    <div class="centered-services">
-        <a href="#" id="trace-and-track-link">Trace and Track</a>
-        <a href="#" id="shipping-rates-link">Shipping Rates</a>
-        <a href="#" id="drop-point-link">Drop Point</a>
-    </div>
-    <div class="resi-form-container">
-        <div class="resi-form">
-            <h3>Enter Your Tracking Number</h3>
-            <form id="tracking-form">
-                <input type="text" id="tracking-number" placeholder="Enter Tracking Number" required>
-                <button type="submit">Track</button>
-            </form>
-        </div>
-    </div>
-    <div class="centered-services"> 
-        <h1>FITUR</h1>
-        <!-- <p>Untuk meningkatkan jaminan barang sampai tujuan dengan aman tanpa risiko kerusakan, RevExpress 
-            menawarkan jasa tambahan untuk paket yang akan dikirim berupa jasa pengepakan. 
-            Jasa packing barang yang ditawarkan berupa bubble wrap dan jasa packing kayu yang 
-            bisa Anda pilih sesuai kebutuhan, diantaranya adalah:
-        </p> -->
-    </div>
-    <div class="photo-container">
-        <div class="photo">
-            <img src="./assets/item2.png" alt="Photo 1">
-        </div>
-        <div class="photo">
-            <img src="./assets/item3.png" alt="Photo 2">
-        </div>
-        <div class="photo">
-            <img src="./assets/item4.png" alt="Photo 3">
-        </div>
-        <div class="photo">
-            <img src="./assets/item5.png" alt="Photo 4">
-        </div>
-    </div>
-
+    
     <!-- <h1>titik lokasi gagen revexpress</h1>
     <div class="photo-container">
         <div class="large-photo">
@@ -73,7 +77,7 @@
     </div> -->
 
 
-    <footer class="centered-services">
+    <footer class="footer">
         &copy; 2023 Shipping Website
     </footer>
 </body>

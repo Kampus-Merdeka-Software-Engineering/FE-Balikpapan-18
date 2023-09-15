@@ -1,18 +1,207 @@
-/* Tambahkan gaya untuk tautan aktif */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    align-content: flex-start;
+    background: url(../assets/P.png);
+    background-size:cover;
+}
+
+.banner .content{
+    max-width: 900px;
+    margin: 0 8%;
+}
+.banner .hasTag{
+    font-size: 3.125rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 30px;
+    margin-top: 30%;
+}
+.banner .content h2{
+    font-size: 3em;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #FAB95B;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #FAB95B;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    color: #FAB95B;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: #fff;
+}
+header .logo span{
+    color: #FAB95B;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style : none;
+    margin-left: 30px;
+}
+header.sticky .navigation li a{
+    color: #fff;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #FAB95B;
+    font-weight: 400;
+}
+header .navigation li a:hover{
+    color:#fff
+}
+
+.resi-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.resi-form {
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#tracking-form {
+    margin-top: 20px;
+    display: center;
+    
+}
+
+#tracking-number {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.centered-services {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.photo {
+    width: 250px;
+    background-color: #FAB95B;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.photo p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #FAB95B;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px 0;
+}
+
+/* Tambahkan gaya untuk tautan aktif
 nav ul li a.active {
     background-color: #FAB95B;
     color: #fff;
     border-radius: 5px;
 }
 
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style navigation menu */
 nav {
     background-color:#FAB95B;
     color: #fff;
@@ -46,7 +235,6 @@ nav a {
     text-decoration: none;
     color: #fff;
 }
-/* CSS Untuk Menempatkan Layanan di Tengah dan Memberikan Tampilan Kotak */
 .centered-services {
     text-align: center;
     margin-top: 20px;
@@ -65,7 +253,6 @@ nav a {
     color: #333;
 }
 
-/* Contoh gaya untuk tautan layanan (Services) */
 .centered-services a {
     display: inline-block;
     margin: 10px;
@@ -77,10 +264,9 @@ nav a {
 }
 
 .centered-services a:hover {
-    background-color: #0056b3;
+    background-color: #fd9b11;
 }
 
-/* Style header */
 header {
     background-color: #FAB95B;
     color: #fff;
@@ -88,14 +274,12 @@ header {
     text-align: center;
 }
 
-/* Style login container */
-/* CSS Untuk Kontainer Formulir Nomor Resi */
 .resi-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -121,7 +305,7 @@ header {
 }
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #fd9b11;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -130,34 +314,36 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #fd9b11;
 }
 
-/* CSS untuk Jumbotron */
 .jumbotron {
-    background-image:url(https://th.bing.com/th/id/OIP.uYTZmXUvKuQFiMMD_1f1iQAAAA?pid=ImgDet&rs=1); /* Ganti dengan URL gambar latar belakang jumbotron Anda */
+    background-image: url('../assets/jumbotron.png');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 225px 0; /* Atur ruang di atas dan bawah */
+    padding: 25% 0; 
 }
 
 .jumbotron h1 {
-    font-size: 36px;
+    font-size: 36px; 
 }
 
 .jumbotron p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 18px; 
+    margin-top: 20px; 
 }
 
 .jumbotron a {
-    background-color: #007bff;
-    color: #fff;
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #007BFF; 
+    color: white;
     text-decoration: none;
-    border-radius: 500px;
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin-top: 20px; 
 }
 
 .jumbotron a:hover {
@@ -165,45 +351,45 @@ button[type="submit"]:hover {
 }
 
 .photo-container {
-    display: flex; /* Menggunakan flexbox */
-    flex-wrap: wrap; /* Baris baru jika elemen tidak muat dalam lebar */
-    justify-content: center; /* Elemen sekitar secara horizontal */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: stretch;
     padding: 10px;
     background-color: #fff;
-    /* min-height: 100vh; */
-    gap: 20px; /* Jarak antara elemen-foto */
-    /* CSS untuk Container Foto */
+
+    gap: 20px;
+
 
 }
 
 
-/* CSS untuk Setiap Foto */
 .photo {
-    width: 250px; /* Lebar setiap foto */
-    background-color: #13263C; /* Warna latar belakang foto container */
-    padding: 50px; /* Ruang di sekitar setiap foto */
-    border-radius: 10px; /* Sudut-sudut melengkung pada setiap foto */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan pada setiap foto */
-    text-align: center; /* Teks dalam setiap foto menjadi tengah */
+    width: 250px;
+    background-color: #FAB95B;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 .photo img {
-    max-width: 100%; /* Membuat gambar dalam foto tidak melebihi lebar foto */
-    height: auto; /* Mengatur tinggi gambar secara otomatis */
-    border-radius: 5px; /* Sudut-sudut melengkung pada gambar */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
     align-items: center;
 
 }
 
 .photo p {
-    margin-top: 10px; /* Jarak antara gambar dan teks caption */
+    margin-top: 10px;
     font-size: 16px;
 }
-/* CSS untuk Container Foto */
 
 
 
+ */
 
+ 
