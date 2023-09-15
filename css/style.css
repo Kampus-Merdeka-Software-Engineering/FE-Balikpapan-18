@@ -55,6 +55,7 @@ p{
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
+    border: 0;
 }
 .btn:hover{
     letter-spacing: 6px;
@@ -114,10 +115,10 @@ header .navigation li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f7f7f7;
+    min-height: 75vh;
+    /* background-color: #f7f7f7;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
 .resi-form {
@@ -188,6 +189,10 @@ footer {
     margin-top: 20px;
     padding: 25px 0;
 }
+
+
+
+
 
 /* Tambahkan gaya untuk tautan aktif
 nav ul li a.active {
