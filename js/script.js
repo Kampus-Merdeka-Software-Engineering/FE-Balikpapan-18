@@ -19,4 +19,3 @@ function openCity(cityName) {
     document.getElementById(cityName).style.display = "block";  
   }
 
-
