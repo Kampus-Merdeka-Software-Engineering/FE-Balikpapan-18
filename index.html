@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping Website</title>
+    <link rel="icon" href="./assets/logo-navbar.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">RevExpress<span></span></a>
+        <a href="#" class="logo"><img src="./assets/logo-navbar-orange.png" id="logoNav" width="100px" alt=""><span></span></a>
         <div class="menuToggle" onclick="toggleMenu()"></div>
         <ul class="navigation">
-            <li><a href="home-link" id="home-link" class="active">Home</a></li>
+            <li><a href="#" id="home-link" class="active">Home</a></li>
             <li><a href="#centered-services" id="services-link">Services</a></li>
             <li><a href="#fitur" id="fitur-link">Fitur</a></li>
-            <li><a href="#" id="about-link">About Us</a></li>
-            <li><a href="login/login.html"id="login-link">Login/Register</a></li>
+            <li><a href="#footer" id="about-link">Contact Us</a></li>
+            <li><a href="./login/login.html"id="login-link">Login</a></li>
         </ul>
     </header>
     <div class="container">
@@ -24,7 +25,7 @@
             <div class="content">
                 <h2>Welcome to RevExpress</h2>
                 <p>Your Trusted Shipping Partner</p>
-                <a href="#" class="btn">Learn More</a>
+                <a href="#centered-services" class="btn">Learn More</a>
             </div>
             <div class="hasTag">
                 <h3 style="color: #fff;">Kemana Saja,</h3>
@@ -33,10 +34,10 @@
         </section>
         <section id="centered-services">
             <div class="centered-services">
-                <button class="btn" onclick="openCity('London')">Trace and Track</button>
-                <button class="btn" onclick="openCity('Paris')">Shipping Rates</button>
+                <button class="btn" onclick="fitur('cekResi')">Trace and Track</button>
+                <button class="btn" onclick="fitur('cekTarif')">Check Rates</button>
             </div>
-            <div id="London" class="w3-container city">
+            <div id="cekResi" class="w3-container fitur">
             <div class="resi-form-container">
                 <div class="resi-form">
                     <h3>Lacak Paket</h3>
@@ -48,7 +49,7 @@
             </div>
             </div>
             
-            <div id="Paris" class="w3-container city" style="display:none">
+            <div id="cekTarif" class="w3-container fitur" style="display:none">
                 <div class="resi-form-container">
                     <div class="resi-form">
                         <h3>Cek Tarif</h3>
@@ -84,18 +85,9 @@
         </section>
     </div>
 
-    <footer class="footer-distributed">
+    <footer class="footer-distributed" id="footer">
             <div class="footer-left">
-                <h3>Rev<span>Express></span></h3>
-                <p class="footer-links">
-                     <a href="#" class="link-1">Home</a>           
-                     <a href="#">Sevices</a>
-                     <a href="#">Fitur</a>
-                     <a href="#">About Us</a>
-                     <a href="#">Login</a>
-                     <a href="#">Register</a>
-                    </p>
-                <p class="footer-company-name">&copy; 2023 PT. Global Rev-Ex 18 All Rights Reserved</p>
+                <a href="#" class="logo"><img src="./assets/logo-navbar-white.png" id="logoNav" width="50%" alt=""><span></span></a>
             </div>
 
              <div class="footer-center">
@@ -103,21 +95,39 @@
                     <i class="fa fa-map-marker"></i>
                     <p><span>Jl. Revou No. 18</span> Bogor, Indonesia</p>
                     </div>
-                    <div>
+                <div>
                     <i class="fa fa-phone"></i>
                     <p>+62 8123 456 7890</p>
-                    </div>
-                    <div>
-                        <i class="fa fa-envelope"></i>
-                        <p><a href="mailto:support@revexpress.com">support@revexpress.com</a></p>
-                    </div>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@revexpress.com" style="text-decoration: none; color: #fff;">support@revexpress.com</a></p>
+                </div>
             </div>
 
-            <div class="footer-right">
-                    <p class="footer-company-about">
-                        <span>About RevExpress</span>
-                        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-                    </p>
+            <div class="footer-right" >
+                <div>
+                    <a href="#" class="link-1" style="text-decoration: none; color: #fff;">Home</a>    
+                <div>
+                    <a style="text-decoration: none; color: #fff;" href="#centered-services" id="services-link">Services</a>
+                </div>
+                <div>
+                    <a style="text-decoration: none; color: #fff;" href="#fitur" id="fitur-link">Fitur</a>
+                </div>
+                <div>
+                    <a style="text-decoration: none; color: #fff;" href="#footer" id="about-link">About Us</a>
+                </div>
+                <div>
+                    <a style="text-decoration: none; color: #fff;" href="./login/login.html"id="login-link">Login</a>
+                </div>
+                    <!-- <p class="footer-links">
+                        <a href="#" class="link-1">Home</a>           
+                        <a href="#">Sevices</a>
+                        <a href="#">Fitur</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </p> -->
                     <div class="footer-icons">
                       <a href="#"><i class="fa fa-facebook"></i></a>
                       <a href="#"><i class="fa fa-linkedin"></i></a>

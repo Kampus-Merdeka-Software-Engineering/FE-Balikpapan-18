@@ -86,6 +86,7 @@ header .logo{
 }
 header.sticky .logo{
     color: #fff;
+    background-image: url('../assets/logo-navbar-white.png');
 }
 header .logo span{
     color: #FAB95B;
@@ -212,7 +213,7 @@ footer {
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 35%;
 }
 
 /* The company logo */
@@ -393,6 +394,11 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
+    }
+
+    .banner{
+        background: url(../assets/banner-media-hp.png);
+        background-size:cover;
     }
 
     header.sticky .menuToggle{
