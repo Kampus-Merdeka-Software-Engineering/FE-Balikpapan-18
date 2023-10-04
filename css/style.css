@@ -353,6 +353,15 @@ footer {
 	margin-bottom: 5px;
 }
 
+.button{
+    background-color: #fd9b11;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 @media (max-width: 880px) {
 
     header,
@@ -550,14 +559,7 @@ header {
     margin-bottom: 10px;
 }
 
-button[type="submit"] {
-    background-color: #fd9b11;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 button[type="submit"]:hover {
     background-color: #fd9b11;
