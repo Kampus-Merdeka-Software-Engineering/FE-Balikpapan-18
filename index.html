@@ -16,7 +16,7 @@
             <li><a href="#" id="home-link" class="active">Home</a></li>
             <li><a href="#centered-services" id="services-link">Services</a></li>
             <li><a href="#fitur" id="fitur-link">Fitur</a></li>
-            <li><a href="#footer" id="about-link">Contact Us</a></li>
+            <li><a href="#contact-us" id="about-link">Contact Us</a></li>
             <li><a href="./login/login.html"id="login-link">Login</a></li>
         </ul>
     </header>
@@ -41,8 +41,8 @@
             <div class="resi-form-container">
                 <div class="resi-form">
                     <h3>Lacak Paket</h3>
-                    <input class="btn" type="number" id="tracking-resi"  required>
-                    <button class="button" onclick="fetchResiById()">Track</button>
+                    <input class="btn" type="number" id="tracking-resi" style="margin-bottom: 10px;" required> <br>
+                    <button class="button" onclick="fetchResiById()">Track</button> 
                     <div id="resi-details"></div>
                 </div>
                 <!-- <div>
@@ -84,7 +84,18 @@
                     <img src="./assets/item5.png" alt="Photo 4">
                 </div>
             </div>
-        
+        </section>
+        <section id="contact-us">
+            <div class="centered-services"> 
+                <h1>Contact Us</h1>
+                <label for="name">Name :</label>
+                <input class="btn" type="text" id="name" style="margin-bottom: 10px;" placeholder="input name" required> <br>
+                <label for="email">Email : </label>
+                <input class="btn" type="text" id="email" style="margin-bottom: 10px;" placeholder="input email" required> 
+                <br>
+                <button class="button" onclick="addNewContact()">Submit</button> 
+                <div id="resi-details"></div>
+            </div>
         </section>
     </div>
 
