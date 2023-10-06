@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://be-balikpapan-18-production.up.railway.app/api';
+// const API_BASE_URL = 'https://be-balikpapan-18-production.up.railway.app/api';
 
 // async function fetchResi() {
 //     try {
