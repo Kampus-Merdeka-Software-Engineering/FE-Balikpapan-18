@@ -16,7 +16,7 @@
             <li><a href="#" id="home-link" class="active">Home</a></li>
             <li><a href="#centered-services" id="services-link">Services</a></li>
             <li><a href="#fitur" id="fitur-link">Fitur</a></li>
-            <li><a href="#footer" id="about-link">Contact Us</a></li>
+            <li><a href="#contact-us" id="about-link">Contact Us</a></li>
             <li><a href="./login/login.html"id="login-link">Login</a></li>
         </ul>
     </header>
@@ -41,8 +41,8 @@
             <div class="resi-form-container">
                 <div class="resi-form">
                     <h3>Lacak Paket</h3>
-                    <input class="btn" type="number" id="tracking-resi"  required>
-                    <button class="button" onclick="fetchResiById()">Track</button>
+                    <input class="btn" type="number" id="tracking-resi" style="margin-bottom: 10px;" required> <br>
+                    <button class="button" onclick="fetchResiById()">Track</button> 
                     <div id="resi-details"></div>
                 </div>
                 <!-- <div>
@@ -56,12 +56,68 @@
                 <div class="resi-form-container">
                     <div class="resi-form">
                         <h3>Cek Tarif</h3>
-                        <form id="tracking-form">
-                            <input type="text" id="tracking-number" placeholder="Kota Asal" required>
-                            <input type="text" id="tracking-number" placeholder="Kota Tujuan" required>
-                            <input type="text" id="tracking-number" placeholder="Berat" required>
-                            <button class="btn" type="submit">Cari</button>
-                        </form>
+                        <table cellpadding="5" style="border-collapse: collapse;"  class="content-table">
+                            <thead>
+                                <tr>
+                                    <td  style="text-align: center"><b>ASAL PAKET</b></td>
+                                    <td  style="text-align: center"><b>TUJUAN PAKET</b></td>
+                                </tr>
+                            </thead>
+                            <tr>
+                              <td>
+                                <select class="button" id="prov1" onchange="loadKota(this.value, 'kot1')">
+                                  <option value="" selected="" disabled="">-- Pilih Provinsi --</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="button" id="prov2" onchange="loadKota(this.value, 'kot2')">
+                                  <option value="" selected="" disabled="">-- Pilih Provinsi --</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <select class="button" id="kot1">
+                                  <option value="" selected="" disabled="">-- Pilih Kota --</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="button" id="kot2">
+                                  <option value="" selected="" disabled="">-- Pilih Kota --</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+     
+                            </tr>
+                            <tr>
+
+                            </tr>
+                            <thead>
+                                <tr><td colspan="2" style="text-align: center"><b>CEK ONGKOS</b></td></tr>
+                            </thead>
+                            <tr>
+                              <td>Berat Paket (gram)</td>
+                              <td><input  class="button"  type="number" id="berat" min="1000" step="100" value="1000"></td>
+                            </tr>
+                            <tr>
+                              <td>Kurir</td>
+                              <td>
+                                <select class="button" id="kurir">
+                                  <option value="" selected="" disabled="">-- Pilih Kurir --</option>
+                                  <option value="jne">JNE</option>
+                                  <option value="pos">POS Indonesia</option>
+                                  <option value="tiki">TIKI</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              
+                              <td colspan="2"><button class="button" onclick="cekOngkir()">Cek Ongkir</button></td>
+                            </tr>
+                          </table>
+                          <br>
+                          <div id="hasil"></div>
                     </div>
                 </div>
             </div>
@@ -84,7 +140,18 @@
                     <img src="./assets/item5.png" alt="Photo 4">
                 </div>
             </div>
-        
+        </section>
+        <section id="contact-us">
+            <div class="centered-services"> 
+                <h1>Contact Us</h1>
+                <label for="name">Name :</label>
+                <input class="btn" type="text" id="name" style="margin-bottom: 10px;" placeholder="input name" required> <br>
+                <label for="email">Email : </label>
+                <input class="btn" type="text" id="email" style="margin-bottom: 10px;" placeholder="input email" required> 
+                <br>
+                <button class="button" onclick="addNewContact()">Submit</button> 
+                <div id="resi-details"></div>
+            </div>
         </section>
     </div>
 
@@ -141,4 +208,5 @@
 </body>
 <script src="./js/script.js"></script>
 <script src="./js/api.js"></script>
+<script src="./js/rajaongkir.js"></script>
 </html>
