@@ -35,14 +35,18 @@ p{
     justify-content: flex-end;
     margin-left: 30px;
     margin-top: 30%;
+    text-shadow: 3px 2px 1px rgb(7,7,7);
 }
 .banner .content h2{
     font-size: 3em;
     color: #fff;
+    text-shadow: 3px 2px 1px rgb(7,7,7);
 }
 .banner .content p{
     font-size: 1em;
     color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 2px 1px rgb(7, 7, 7);
 }
 .btn{
     font-size: 1em;
@@ -117,11 +121,7 @@ header .navigation li a:hover{
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    /* background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
-
 .resi-form {
     /* width: 50%; */
     text-align: center;
@@ -164,9 +164,6 @@ header .navigation li a:hover{
     background-color: #FAB95B;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #111;
-    text-align: center;
-    box-shadow: 0 0 10px #111;
     text-align: center;
 }
 
