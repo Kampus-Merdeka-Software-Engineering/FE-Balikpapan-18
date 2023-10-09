@@ -44,21 +44,21 @@ function cekOngkir() {
                 if (ro.status.code == 200) {
                     temp += `<table cellpadding="5" border="1" style="border-collapse: collapse;" class="content-table">
                     <thead>
-              <tr><td colspan="4" style="text-align: center"><b>${ro.results[0].name} - ${ro.results[0].code}</b></td></tr></thead>
-              <tr>
-                <th>Kurir</th>
-                <th>Description</th>
-                <th>Harga</th>
-                <th>Estimasi</th>
-              </tr>`;
+                        <tr><td colspan="4" style="text-align: center"><b>${ro.results[0].name} - ${ro.results[0].code}</b></td></tr></thead>
+                        <tr>
+                            <th>Kurir</th>
+                            <th>Description</th>
+                            <th>Harga</th>
+                            <th>Estimasi</th>
+                        </tr>`;
                     const costs = ro.results[0].costs;
                     for (let i = 0; i < costs.length; i++) {
                         temp += `<tr>
-                <td><b>${costs[i].service}</b></td>
-                <td>${costs[i].description}</td>
-                <td>${costs[i].cost[0].value.toLocaleString()}</td>
-                <td>${costs[i].cost[0].etd} day</td>
-              </tr>`;
+                            <td><b>${costs[i].service}</b></td>
+                            <td>${costs[i].description}</td>
+                            <td>${costs[i].cost[0].value.toLocaleString()}</td>
+                            <td>${costs[i].cost[0].etd} day</td>
+                        </tr>`;
                     }
                     temp += `</table>`;
                     document.getElementById('hasil').innerHTML = temp;
