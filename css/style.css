@@ -154,7 +154,7 @@ header .navigation li a:hover{
 .centered-services {
     text-align: center;
     margin-top: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     border-radius: 10px;
 }
@@ -383,11 +383,10 @@ footer {
 
 .content-table tbody tr {
     border-bottom: 1px solid #dddddd;
-}
-
-.content-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
+
+
 
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #fd9b11;

@@ -42,7 +42,7 @@ function cekOngkir() {
                 let temp = '';
                 const ro = data.rajaongkir;
                 if (ro.status.code == 200) {
-                    temp += `<table cellpadding="5" border="1" style="border-collapse: collapse;" class="content-table">
+                    temp += `<table cellpadding="5" border="1" style="border-collapse: collapse; margin:auto" class="content-table">
                     <thead>
                         <tr><td colspan="4" style="text-align: center"><b>${ro.results[0].name} - ${ro.results[0].code}</b></td></tr></thead>
                         <tr>
