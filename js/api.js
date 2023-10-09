@@ -50,12 +50,32 @@ async function fetchResiById() {
         const resi = await response.json();
         const resiDetails = document.getElementById('resi-details');
         resiDetails.innerHTML = `
-        No Resi: ${resi.data.no_resi}<br>
-        nama barang: ${resi.data.nama_barang}<br>
-        Tujuan : ${resi.data.destination}<br>
-        Berat : ${resi.data.weight} Kg <br>
-        `;
+        <table cellpadding="5" border="1" style="border-collapse: collapse;" class="content-table">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Keterangan</th>
+                    <th style="text-align: center">Hasil</th>
+                </tr>
+            </thead>
+            <tr>
+                <th> No Resi</th>
+                <th>${resi.data.no_resi}</th>
+            </tr>
+            <tr>
+                <th> nama barang</th>
+                <th>${resi.data.nama_barang}</th>
+            </tr>
+            <tr>
+                <th> Tujuan</th>
+                <th>${resi.data.destination}</th>
+            </tr>
+            <tr>
+                <th> Berat</th>
+                <th>${resi.data.weight}</th>
+            </tr>
+        </table>`;
     } catch (error) {
+        alert('No resi tidak ditemukan');
         console.error('Error fetching resi:', error);
     }
 }
