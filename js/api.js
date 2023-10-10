@@ -62,16 +62,20 @@ async function fetchResiById() {
                 <th>${resi.data.no_resi}</th>
             </tr>
             <tr>
-                <th> nama barang</th>
+                <th> Nama Penerima</th>
+                <th>${resi.data.name}</th>
+            </tr>
+            <tr>
+                <th> Nama Barang</th>
                 <th>${resi.data.nama_barang}</th>
             </tr>
             <tr>
-                <th> Tujuan</th>
-                <th>${resi.data.destination}</th>
+                <th>Asal - Tujuan</th>
+                <th>${resi.data.origin} - ${resi.data.destination}</th>
             </tr>
             <tr>
-                <th> Berat</th>
-                <th>${resi.data.weight}</th>
+                <th> Status</th>
+                <th>${resi.data.status}</th>
             </tr>
         </table>`;
     } catch (error) {
